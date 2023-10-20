@@ -1124,7 +1124,8 @@ h2 {
     }
 
     #contact {
-        max-height: 360px;
+        max-height: 250px;
+        min-height: 200px;
     }
 
     #contact-btn {
