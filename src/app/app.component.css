@@ -10,7 +10,7 @@ body {
 .bg-img {
     /* The image used */
     background-image: url("/assets/images/banner.png");
-    min-height: 280px;
+    min-height: 200px;
 
     /* Center and scale the image nicely */
     background-position: center;
@@ -24,7 +24,7 @@ body {
 /* Position the navbar container inside the image */
 .container {
     position: absolute;
-    top: 20px;
+    top: 10px;
     left: 50%;
     transform: translate(-50%, -50%);
     width: auto;
@@ -42,9 +42,9 @@ body {
 .topnav a {
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 8px 12px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -70,31 +70,29 @@ body {
 
 header {
     text-align: center;
-    padding: 100px;
+    padding: 50px;
     background-color: #f4f4f4;
 }
 
 section {
-    padding: 30px 0 30px 0;
+    padding: 15px 0 15px 0;
     background-color: #c69b5c;
 }
 
 p {
-    margin: 0;
-    font-size: 20px;
-    font-family: palatino;
+    margin: 20px;
+    font-size: 18px;
 }
 
 h2 {
     margin: 0;
-    font-size: 80px;
-    font-family: palatino;
+    font-size: 60px;
 }
 
 #legwork-img {
     width: 40%;
     height: auto;
-    margin: 20px;
+    margin: 10px;
 }
 
 #gallery {
@@ -148,18 +146,18 @@ h2 {
 }
 
 #contact {
-    min-height: 400px;
+    min-height: 300px;
 }
 
 #contact-btn {
     background-color: black;
     border: none;
     color: white;
-    padding: 25px 32px;
+    padding: 15px 24px;
     text-align: center;
-    font-size: 26px;
+    font-size: 22px;
     top: 50%;
-    margin-top: 80px;
+    margin-top: 40px;
     cursor: pointer;
     border-radius: 12px;
     transition: background-color 0.3s ease;
@@ -171,7 +169,7 @@ h2 {
 
 #socials {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 .social-icons a {
@@ -721,6 +719,41 @@ h2 {
     animation: flying 51s ease-in-out -3.4s infinite alternate;
 }
 
+.bg .dotWrapper-76 {
+    top: 12%;
+    left: 33%;
+    -webkit-animation: flying 45s ease-in-out -2.1s infinite alternate;
+    animation: flying 45s ease-in-out -2.1s infinite alternate;
+}
+
+.bg .dotWrapper-77 {
+    top: 88%;
+    left: 22%;
+    -webkit-animation: flying 38s ease-in-out -5.3s infinite alternate;
+    animation: flying 38s ease-in-out -5.3s infinite alternate;
+}
+
+.bg .dotWrapper-78 {
+    top: 34%;
+    left: 17%;
+    -webkit-animation: flying 42s ease-in-out -1.8s infinite alternate;
+    animation: flying 42s ease-in-out -1.8s infinite alternate;
+}
+
+.bg .dotWrapper-79 {
+    top: 67%;
+    left: 88%;
+    -webkit-animation: flying 47s ease-in-out -4.2s infinite alternate;
+    animation: flying 47s ease-in-out -4.2s infinite alternate;
+}
+
+.bg .dotWrapper-80 {
+    top: 19%;
+    left: 76%;
+    -webkit-animation: flying 39s ease-in-out -3.7s infinite alternate;
+    animation: flying 39s ease-in-out -3.7s infinite alternate;
+}
+
 .bg .dot {
     font-size: 4px;
     color: #FEA039;
@@ -1093,43 +1126,226 @@ h2 {
     }
 }
 
+body.starfield-bg {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #000;
+    font-family: 'Palatino', serif;
+}
 
+.main-layout {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    align-items: stretch;
+    justify-content: center;
+}
 
+.side-images {
+    width: 20vw;
+    min-width: 180px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><rect width="100%" height="100%" fill="black"/><circle cx="10" cy="10" r="1" fill="white"/><circle cx="50" cy="80" r="0.5" fill="white"/><circle cx="120" cy="40" r="0.7" fill="white"/><circle cx="80" cy="150" r="1.2" fill="white"/><circle cx="160" cy="100" r="0.8" fill="white"/></svg>');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 120px;
+    position: relative;
+}
 
-@media only screen and (max-width: 600px) {
-    header {
-        padding: 50px;
+.side-images.right {
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.side-img {
+    display: block;
+    margin: 10px 0;
+    max-width: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 8px #222;
+    background: #222;
+}
+
+.side-img.top {
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+.side-img.middle {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.side-img.tarot {
+    margin: 0;
+    max-width: 50%;
+}
+
+.center-content {
+    flex: 1 1 600px;
+    max-width: 700px;
+    margin: 20px 0;
+    background: #000;
+    border-left: 8px solid;
+    border-right: 8px solid;
+    border-image: linear-gradient(to bottom, violet, indigo, blue, green, yellow, orange, red) 1 100%;
+    box-shadow: 0 0 30px 8px #a259e6, 0 0 30px 8px #a259e6, 0 0 0 12px #000 inset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 20px;
+    padding-top: 0;
+    position: relative;
+}
+
+.rainbow-header {
+    width: 100%;
+    background: linear-gradient(90deg, violet, indigo, blue, green, yellow, orange, red);
+    padding: 0;
+    margin-bottom: 9px;
+    border-radius: 0;
+    box-shadow: 0 4px 24px #a259e6;
+    position: relative;
+    height: 70px;
+    overflow: hidden;
+}
+
+.coworkers-title {
+    font-size: 3.5rem;
+    font-family: 'Palatino', serif;
+    color: #7c3aed;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    margin: 0;
+    padding-top: 5px;
+    line-height: 1;
+    width: 100%;
+    text-align: center;
+}
+
+.coworkers-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(200, 180, 255, 0.95);
+    z-index: -1;
+}
+
+.album-announcement {
+    margin: 15px 0 9px 0;
+    text-align: center;
+}
+
+.album-blue {
+    color: #001aff;
+    font-size: 1.1rem;
+    font-family: 'Palatino', serif;
+}
+
+.album-red {
+    color: #b22222;
+    font-size: 2rem;
+    font-family: 'Palatino', serif;
+    font-weight: bold;
+    display: block;
+    margin-top: 4px;
+}
+
+.album-cover {
+    margin: 9px 0 14px 0;
+}
+
+.album-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 0 18px #a259e6;
+    background: #222;
+}
+
+.intro-text {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-top: 9px;
+    text-align: center;
+    font-family: 'Palatino', serif;
+}
+
+.intro-text a.yellow-link {
+    color: #e6e600;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+@media (max-width: 900px) {
+    .main-layout {
+        flex-direction: column;
     }
-
-    h2 {
-        font-size: 40px;
+    .side-images {
+        flex-direction: row;
+        width: 100vw;
+        min-width: 0;
+        justify-content: center;
+        padding: 10px 0;
     }
-
-    .bg-img {
-        background-position: left;
-        background-repeat: no-repeat;
-        background-size: cover;
+    .side-images.right {
+        padding-bottom: 10px;
+        padding-top: 0;
     }
-
-    #legwork-img {
-        width: 100%;
-        height: auto;
-        margin: 5px;
+    .center-content {
+        max-width: 98vw;
+        margin: 0 auto;
+        border-width: 6px;
+        padding: 0 1vw 10px 1vw;
     }
-
-    #gallery {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    .rainbow-header {
+        height: 50px;
     }
-
-    #contact {
-        max-height: 250px;
-        min-height: 200px;
+    .coworkers-title {
+        font-size: 2rem;
+        height: 30px;
     }
-
-    #contact-btn {
-        font-size: 12px;
-        margin: 30px;
+    .album-img {
+        width: 120px;
+        height: 120px;
     }
+}
+
+@media (max-width: 600px) {
+    .coworkers-title {
+        font-size: 2rem;
+        padding: 0 8px;
+    }
+    .album-red {
+        font-size: 1.2rem;
+    }
+    .album-blue {
+        font-size: 0.9rem;
+    }
+    .center-content {
+        border-width: 3px;
+        padding: 0 2vw 5px 2vw;
+    }
+    .side-img {
+        max-width: 40px;
+    }
+}
+
+.no-underline {
+    text-decoration: none;
 }
